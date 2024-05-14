@@ -53,12 +53,16 @@ This project contains an answer for Praweda Sarana Informatika technical test.
     ```sh
     cd ..\PSI-TechTest\frontend
     ```
-15. Then run the application
+15. We need to download library before running the ReactJS project
+    ```sh
+    npm install
+    ```
+16. After all the library downloaded, then run the application
     ```sh
     npm start
     ```
-16. After the application successfully running, it will open a new tab in browser and show the data in ReactJS table using Ant Design library.
-17. Search Bar above the table is work by typing any character in it. It will search the character in all available column.
+17. After the application successfully running, it will open a new tab in browser and show the data in ReactJS table using Ant Design library.
+18. Search Bar above the table is work by typing any character in it. It will search the character in all available column.
 
 ## Contact
 Gilang Wiradhyaksa
