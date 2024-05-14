@@ -2,9 +2,27 @@ import express, { Request, Response } from 'express';
 import axios from 'axios';
 import cors from 'cors';
 
+import bodyParser from 'body-parser';
+import cookieParser from 'cookie-parser';
+import compression from 'compression';
+
+import * as dotenv from 'dotenv';
+import { checkOutRouter, loginRouter } from './routers'
+import { accessValidation } from './middlewares'
+
 const app = express();
 
-app.use(cors())
+app.use(cors({
+  credentials: true,
+}))
+
+app.use(compression());
+app.use(cookieParser());
+app.use(bodyParser.json());
+dotenv.config();
+
+app.use('/checkout', accessValidation, checkOutRouter);
+app.use('/login', loginRouter);
 
 app.get('/getRandomUsers', async (req: Request, res: Response) => {
   try {
@@ -12,9 +30,6 @@ app.get('/getRandomUsers', async (req: Request, res: Response) => {
     const page = req.query.page || 1;
 
     const response = await axios.get(`https://randomuser.me/api?results=${results}&page=${page}`);
-    
-    // console.log("Ini hasilnya =========== ")
-    // console.log(response.data);
 
     const users = response.data.results;
     const formattedUsers = users.map((user: any) => {
@@ -37,7 +52,7 @@ app.get('/getRandomUsers', async (req: Request, res: Response) => {
   }
 });
 
-const PORT = process.env.PORT || 8080;
+const PORT = 8080;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
