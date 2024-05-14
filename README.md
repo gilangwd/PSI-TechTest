@@ -9,7 +9,7 @@ This project contains an answer for Praweda Sarana Informatika technical test.
 ## Usage
 
 1. Download or clone this project to your local computer.
-2. Open terminal and change the directory into backend
+2. Open terminal and change the directory into `backend`
    ```sh
    cd ..\PSI-TechTest\backend
    ```
@@ -49,7 +49,7 @@ This project contains an answer for Praweda Sarana Informatika technical test.
     ```
 12. Above parameter will return 10 data that already manipulated based on the requirement.
 13. Next we will load the data we got from RandomUsers into a table.
-14. Open new terminal and change the directory into frontend
+14. Open new terminal and change the directory into `frontend`
     ```sh
     cd ..\PSI-TechTest\frontend
     ```
