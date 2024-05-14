@@ -65,8 +65,8 @@ This project contains an answer for Praweda Sarana Informatika technical test.
 18. Search Bar above the table is work by typing any character in it. It will search the character in all available column.
 
 ## Contact
-Gilang Wiradhyaksa
-gilang.wirad@gmail.com
+Gilang Wiradhyaksa  
+gilang.wirad@gmail.com  
 [LinkedIn](https://www.linkedin.com/in/gilangwiradhyaksa/)
 
 ## Acknowledgement
