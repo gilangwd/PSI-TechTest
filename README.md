@@ -17,7 +17,7 @@ This project contains an answer for Praweda Sarana Informatika technical test.
    ```sh
    npm start
    ```
-4. After the application successfully running, continue explanation.
+4. After the application successfully running, please continue to explanation.
 
 ## Explanation
 
