@@ -1,5 +1,6 @@
 # PSI Technical Test
 ### Gilang Wiradhyaksa
+#### Fullstack Developer
 
 <!-- GETTING STARTED -->
 ## Getting Started
