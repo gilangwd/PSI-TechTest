@@ -22,7 +22,7 @@ This project contains an answer for Praweda Sarana Informatika technical test.
 ## Explanation
 
 1. For task 1 and 2 I combine both of it, so before calling an API for task 1, we need to login first to get authentication token.
-2. Access login API at http://localhost:8080/login.
+2. Access login API at http://localhost:8080/login. This API using POST method.
 3. Parameter for login is `id` and `username`, both are string.
     ```sh
     {
@@ -31,7 +31,7 @@ This project contains an answer for Praweda Sarana Informatika technical test.
     }
     ```
 4. If the login success, we will get a token for authentication.
-5. For task 1, access checkout API at http://localhost:8080/checkout.
+5. For task 1, access checkout API at http://localhost:8080/checkout. This API using POST method.
 6. Parameter for checkout is `hasVoucher` which is 'Y'/'N' and `itemPrice` which is integer of item price.
     ```sh
     {
@@ -41,7 +41,7 @@ This project contains an answer for Praweda Sarana Informatika technical test.
     ```
 7. Don't forget to set the Authorization -> Bearer Token with the token we got from login before.
 8. If authorization success, we will get the return of checkout API which is `amountToPaid` and `pointsEarned` if you put `hasVoucher` as 'Y'
-9. For task 4, access get random users API at http://localhost:8080/getRandomUsers.
+9. For task 4, access get random users API at http://localhost:8080/getRandomUsers. This API using GET method.
 10. Without parameter it will only return one data.
 11. We can change the parameter for `result` and `page`.
     ```sh
